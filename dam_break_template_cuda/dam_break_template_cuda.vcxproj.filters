@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="源文件\density_update">
+      <UniqueIdentifier>{eb88a26d-90e1-45c7-a9d4-37bc1d9ebb90}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\basic_func">
+      <UniqueIdentifier>{c2acf518-76d9-4692-939e-7e3aa479b347}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\acceleration_update">
+      <UniqueIdentifier>{09ec123f-b575-4c0d-bf35-8bf5ae0a7197}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\fast_search_neighbors">
+      <UniqueIdentifier>{96140849-9fd8-4243-a772-19cbb6102743}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\io">
+      <UniqueIdentifier>{0762b7d6-f601-418e-b59f-bda996458fc0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\velocity_update">
+      <UniqueIdentifier>{fce92cad-343a-462c-8e0b-8712ec7280cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\position_time_update">
+      <UniqueIdentifier>{acfcb452-5716-488b-b689-bc1e87355fc0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\pressure_update">
+      <UniqueIdentifier>{ee4996fd-b99e-4d7f-97b3-b9e66986b597}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\renew_time_step">
+      <UniqueIdentifier>{9e152782-f9ff-440f-8445-7de37e19b547}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\support_radius_update">
+      <UniqueIdentifier>{7f70b64f-e7ff-46d6-abf6-5924a6b194cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\initialization">
+      <UniqueIdentifier>{e9e49df6-2831-4f17-b0c6-d7a9f0ef5128}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="basic_func\constrain_gpu.cu">
+      <Filter>源文件\basic_func</Filter>
+    </CudaCompile>
+    <CudaCompile Include="basic_func\cross_prod_gpu.cu">
+      <Filter>源文件\basic_func</Filter>
+    </CudaCompile>
+    <CudaCompile Include="basic_func\dot_prod_gpu.cu">
+      <Filter>源文件\basic_func</Filter>
+    </CudaCompile>
+    <CudaCompile Include="basic_func\modulus_gpu.cu">
+      <Filter>源文件\basic_func</Filter>
+    </CudaCompile>
+    <CudaCompile Include="density_update\density_filter_cuda.cu">
+      <Filter>源文件\density_update</Filter>
+    </CudaCompile>
+    <CudaCompile Include="acceleration_update\acc_pressure_term_update.cu">
+      <Filter>源文件\acceleration_update</Filter>
+    </CudaCompile>
+    <CudaCompile Include="position_time_update\position_time_update_cuda.cu">
+      <Filter>源文件\position_time_update</Filter>
+    </CudaCompile>
+    <CudaCompile Include="pressure_update\pressure_update_cuda.cu">
+      <Filter>源文件\pressure_update</Filter>
+    </CudaCompile>
+    <CudaCompile Include="support_radius_update\support_radius_update_cuda.cu">
+      <Filter>源文件\support_radius_update</Filter>
+    </CudaCompile>
+    <CudaCompile Include="density_update\density_update_cuda.cu">
+      <Filter>源文件\density_update</Filter>
+    </CudaCompile>
+    <CudaCompile Include="velocity_update\velocity_filter_cuda.cu">
+      <Filter>源文件\velocity_update</Filter>
+    </CudaCompile>
+    <CudaCompile Include="velocity_update\velocity_update_cuda.cu">
+      <Filter>源文件\velocity_update</Filter>
+    </CudaCompile>
+    <CudaCompile Include="basic_func\kernel_function_gpu.cu">
+      <Filter>源文件\basic_func</Filter>
+    </CudaCompile>
+    <CudaCompile Include="cuda_transfer.cu">
+      <Filter>源文件</Filter>
+    </CudaCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="basic_func\basic_func.h">
+      <Filter>源文件\basic_func</Filter>
+    </ClInclude>
+    <ClInclude Include="fast_search_neighbors\fast_search_neighbors.h">
+      <Filter>源文件\fast_search_neighbors</Filter>
+    </ClInclude>
+    <ClInclude Include="io\input.h">
+      <Filter>源文件\io</Filter>
+    </ClInclude>
+    <ClInclude Include="io\output.h">
+      <Filter>源文件\io</Filter>
+    </ClInclude>
+    <ClInclude Include="initialization\field_initialization.h">
+      <Filter>源文件\initialization</Filter>
+    </ClInclude>
+    <ClInclude Include="global_variables.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="configuration.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="struct_particle.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="update_calculation.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="generate_neighbors_list.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="acceleration_update\acc_boundaries_update.cpp">
+      <Filter>源文件\acceleration_update</Filter>
+    </ClCompile>
+    <ClCompile Include="acceleration_update\acc_pressure_term_update.cpp">
+      <Filter>源文件\acceleration_update</Filter>
+    </ClCompile>
+    <ClCompile Include="acceleration_update\acc_tension_term_update.cpp">
+      <Filter>源文件\acceleration_update</Filter>
+    </ClCompile>
+    <ClCompile Include="acceleration_update\acc_viscosity_term_update.cpp">
+      <Filter>源文件\acceleration_update</Filter>
+    </ClCompile>
+    <ClCompile Include="acceleration_update\acceleration_filter.cpp">
+      <Filter>源文件\acceleration_update</Filter>
+    </ClCompile>
+    <ClCompile Include="basic_func\constrain.cpp">
+      <Filter>源文件\basic_func</Filter>
+    </ClCompile>
+    <ClCompile Include="basic_func\cross_prod.cpp">
+      <Filter>源文件\basic_func</Filter>
+    </ClCompile>
+    <ClCompile Include="basic_func\dot_prod.cpp">
+      <Filter>源文件\basic_func</Filter>
+    </ClCompile>
+    <ClCompile Include="basic_func\modulus.cpp">
+      <Filter>源文件\basic_func</Filter>
+    </ClCompile>
+    <ClCompile Include="density_update\density_filter.cpp">
+      <Filter>源文件\density_update</Filter>
+    </ClCompile>
+    <ClCompile Include="density_update\density_update.cpp">
+      <Filter>源文件\density_update</Filter>
+    </ClCompile>
+    <ClCompile Include="density_update\density_update_leapfrog.cpp">
+      <Filter>源文件\density_update</Filter>
+    </ClCompile>
+    <ClCompile Include="fast_search_neighbors\fast_search_neighbors.cpp">
+      <Filter>源文件\fast_search_neighbors</Filter>
+    </ClCompile>
+    <ClCompile Include="io\input.cpp">
+      <Filter>源文件\io</Filter>
+    </ClCompile>
+    <ClCompile Include="io\output.cpp">
+      <Filter>源文件\io</Filter>
+    </ClCompile>
+    <ClCompile Include="position_time_update\position_time_update.cpp">
+      <Filter>源文件\position_time_update</Filter>
+    </ClCompile>
+    <ClCompile Include="renew_time_step\renew.cpp">
+      <Filter>源文件\renew_time_step</Filter>
+    </ClCompile>
+    <ClCompile Include="support_radius_update\support_radius_update.cpp">
+      <Filter>源文件\support_radius_update</Filter>
+    </ClCompile>
+    <ClCompile Include="velocity_update\velocity_filter.cpp">
+      <Filter>源文件\velocity_update</Filter>
+    </ClCompile>
+    <ClCompile Include="velocity_update\velocity_update.cpp">
+      <Filter>源文件\velocity_update</Filter>
+    </ClCompile>
+    <ClCompile Include="velocity_update\velocity_update_leapfrog.cpp">
+      <Filter>源文件\velocity_update</Filter>
+    </ClCompile>
+    <ClCompile Include="pressure_update\pressure_update.cpp">
+      <Filter>源文件\pressure_update</Filter>
+    </ClCompile>
+    <ClCompile Include="initialization\field_initialization.cpp">
+      <Filter>源文件\initialization</Filter>
+    </ClCompile>
+    <ClCompile Include="global_variables.cpp">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="basic_func\kernel_function.cpp">
+      <Filter>源文件\basic_func</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
